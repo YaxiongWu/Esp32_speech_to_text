@@ -1,0 +1,33 @@
+menu "Example Configuration"
+
+config WIFI_SSID
+    string "WiFi SSID"
+	default "myssid"
+	help
+		SSID (network name) for the example to connect to.
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+	default "mypassword"
+	help
+		WiFi password (WPA or WPA2) for the example to use.
+		Can be left blank if the network has no security set.
+
+config BAIDU_ACCESS_KEY
+    string "Baidu Access Key"
+    default "access key"
+    help
+        Baidu Cloud API Key
+
+        The key may be obtained from https://cloud.baidu.com/
+
+config BAIDU_SECRET_KEY
+    string "Baidu Cloud Secret Key"
+    default "baidu secret key"
+    help
+        Baidu cloud secret key
+
+        The key may be obtained from https://cloud.baidu.com/
+
+
+endmenu
