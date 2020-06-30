@@ -1,0 +1,40 @@
+menu "Example Configuration"
+
+config WIFI_SSID
+    string "WiFi SSID"
+	default "myssid"
+	help
+		SSID (network name) for the example to connect to.
+
+config WIFI_PASSWORD
+    string "WiFi Password"
+	default "mypassword"
+	help
+		WiFi password (WPA or WPA2) for the example to use.
+		Can be left blank if the network has no security set.
+
+config Xunfei_APPID
+    string "Xunfei APPID"
+    default "APPID"
+    help
+        Xunfei APPID
+
+        The APPID be obtained from https://www.xfyun.cn
+
+config Xunfei_APISecret
+    string "Xunfei APISecret"
+    default "APISecret"
+    help
+        Xunfei APISecret
+
+        The APISecret be obtained from https://www.xfyun.cn
+
+config Xunfei_APIKey
+    string "Xunfei APIKey"
+    default "APIKey"
+    help
+        Xunfei APIKey
+
+        The APIKey be obtained from https://www.xfyun.cn
+
+endmenu
